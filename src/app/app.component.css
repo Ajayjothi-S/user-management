@@ -1,0 +1,65 @@
+form{
+    line-height: 35px;
+    width: 30%;
+    margin: 0px auto 0px auto;
+    box-shadow: 5px 5px 20px gainsboro;
+    border-radius: 0px 0px 15px 15px;
+    background-color: white;
+}
+.btn{
+    display: flex;
+    justify-content: space-around;
+}
+input{
+    width:350px;
+    padding: 10px 0px 10px 0px;
+    font-size: 20px;
+    outline: none;
+    text-align: center;
+    border: 2px solid gainsboro;
+    border-radius: 7px;
+    margin-left: 25px;
+}
+label{
+    margin-left: 15px;
+}
+h2{
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: rgb(250, 95, 95);
+    border-radius: 0px 0px 10px 10px;
+    color:rgb(24, 23, 23);
+}
+button{
+    padding: 12px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    border-radius: 50px;
+    width: 75px;
+    border: none;
+    font-weight: 700;
+    font-size: 15px;
+}
+.regbtn{
+    background-color: rgb(57, 161, 57);
+    color: white;
+    width: 90px;
+}
+.resbtn{
+    background-color: rgb(248, 248, 18);
+    color: black;
+}
+.getbtn{
+    background-color: rgb(226, 45, 45);
+    color: white;
+}
+::-webkit-file-upload-button{
+    margin-left: 10px;
+    padding: 5px 10px 5px 10px;
+    background-color: rgb(226, 141, 30);
+    border-radius: 7px;
+    border: none;
+    color: white;
+    cursor:pointer;
+}

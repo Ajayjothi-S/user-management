@@ -1,0 +1,22 @@
+{
+  "userDetails": [
+    {
+      "id": 1,
+      "Name": "Ajay Jothi S",
+      "Email": "ajay@gmail.com",
+      "Password": "ajay@123"
+    },
+    {
+      "id": 2,
+      "Name": "Anand B",
+      "Email": "anand@gmail.com",
+      "Password": "anand@123"
+    },
+    {
+      "id": 3,
+      "Name": "Arun Kumar",
+      "Email": "arun@gmail.com",
+      "Password": "arun@123"
+    }
+  ]
+}

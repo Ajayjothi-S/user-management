@@ -1,0 +1,102 @@
+<form [formGroup]="registerForm" (ngSubmit)="handleFormSubmit()">
+  <h2>Registration Form</h2>
+  <div>
+    <div>
+      <label><b>Name</b></label>
+    </div>
+    <div>
+      <input type="text" formControlName="Name">
+    </div>
+  </div>
+  <div>
+    <div>
+      <label><b>Email</b></label>
+    </div>
+    <div>
+      <input type="email" formControlName="Email">
+    </div>
+  </div>
+  <div>
+    <div>
+      <label><b>Password</b></label>
+    </div>
+    <div>
+      <input type="password" formControlName="Password">
+    </div>
+  </div>
+  <div>
+    <div>
+      <label><b>Upload Your Image</b></label>
+    </div>
+    <div>
+      <input type="file">
+    </div>
+  </div>
+  <div class="btn">
+    <span>
+      <button class="regbtn" type="submit">Register</button>
+    </span>
+    <span>
+      <button class="resbtn" type="reset">Reset</button>
+    </span>
+  </div>
+</form>
+
+<form [formGroup]="updateForm" (ngSubmit)="handleFormUpdate()">
+  <h2>Update User Details Form</h2>
+  <div>
+    <div>
+      <label><b>Id</b></label>
+    </div>
+    <div>
+      <input type="text" formControlName="id">
+    </div>
+  </div>
+  <div *ngIf="!foundId; else elseBlock">
+    <div class="btn">
+      <span>
+        <button class="getbtn" type="submit">Get</button>
+      </span>
+      <span>
+        <button class="resbtn" type="reset">Reset</button>
+      </span>
+    </div>
+  </div>
+  <ng-template #elseBlock>
+    <div>
+      <div>
+        <label><b>Name</b></label>
+      </div>
+      <div>
+        <input type="text" formControlName="Name">
+      </div>
+    </div>
+    <div>
+      <div>
+        <label><b>Email</b></label>
+      </div>
+      <div>
+        <input type="email" formControlName="Email">
+      </div>
+    </div>
+    <div>
+      <div>
+        <label><b>Password</b></label>
+      </div>
+      <div>
+        <input type="password" formControlName="Password">
+      </div>
+    </div>
+    <div class="btn">
+      <span>
+        <button class="regbtn" type="submit">Update</button>
+      </span>
+      <span>
+        <button class="resbtn" type="reset">Reset</button>
+      </span>
+    </div>
+  </ng-template>
+</form>
+
+
+<router-outlet></router-outlet>
